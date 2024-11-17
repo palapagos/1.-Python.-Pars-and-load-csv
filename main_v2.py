@@ -36,7 +36,7 @@ def fetch_weather():
 # Запланувати виконання функції кожну хвилину
 schedule.every(1).minutes.do(fetch_weather)
 start_time = time.time()
-max_duration = 300  # Максимальна тривалість роботи (в секундах)
+max_duration = 305  # Максимальна тривалість роботи (в секундах)
 # Головний цикл
 while True:
     schedule.run_pending()
